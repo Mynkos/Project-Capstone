@@ -75,6 +75,7 @@ def update_pie_chart(entered_site):
         names=names,
         title='Total Successful Launches by Site' if entered_site == 'ALL' else f'Success vs. Failed for {entered_site}'
     )
+    fig.write_html("index.html")
     return fig
 
 # Callback to update scatter chart
